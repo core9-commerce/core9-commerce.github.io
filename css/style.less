@@ -1,7 +1,11 @@
 /* vars */
-@heightTopbar : 50px;
+@topbarHeight: 50px;
+@topbarBackground: orange;
+@footerHeight: 50px;
+@footerBackground: orange;
+@mainBackground: #369;
+@fullHeight : 100%;
 
-@blue: #369;
 
 /* vars */
 
@@ -10,48 +14,39 @@
   padding: 0;
 }
 
-html, body {
-  height: 100%;
+html , body {
+  height: @fullHeight;
 }
 
 #wrap {
-  min-height: 100%;
-  margin-top: @heightTopbar;
+  height: @fullHeight;
+  margin-top: @topbarHeight;
 }
 
 #main {
-  overflow: auto;
-  background: @blue;
-}
-
-.center-div {
-  position: relative;
-  width: 100%;
+  background: @mainBackground;
+  width: @fullHeight;
   margin: 0 auto;
-  min-height: 100%;
   height: 100vh;
 }
 
 #header {
-  position: relative;
-  margin-bottom: -100px;
-  height: @heightTopbar;
-  background: orange;
+  margin-bottom: -2 * @topbarHeight;
+  height: @topbarHeight;
+  background: @topbarBackground;
 }
 
 #wrap-header {
   position: relative;
-  margin-bottom: -100px;
-  height: @heightTopbar;
-  clear: both;
-  background: orange;
-  z-index:999;
+  margin-bottom: -2 * @topbarHeight;
+  height: @topbarHeight;
+  background: @topbarBackground;
+  z-index: 999;
 }
 
 #footer {
-  position: relative;
-  margin-top: -50px;
-  height: 50px;
-  background: orange;
+  margin-top: -@footerHeight;
+  height: @footerHeight;
+  background: @footerBackground;
 }
 
