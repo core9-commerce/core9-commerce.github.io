@@ -1,4 +1,4 @@
-@topbarHeight: 70px;
+@topbarHeight: 50px;
 @topbarBackground: orange;
 @footerHeight: 50px;
 @footerBackground: orange;
@@ -12,27 +12,27 @@ html , body {
   background: @mainBackground;
 }
 
-.header {
+header {
   height: @topbarHeight;
   background: @topbarBackground;
 }
 
-.page {
+main {
   min-height: 100%;
   margin-top: -@topbarHeight;
   margin-bottom: -@footerHeight;
 }
 
-.page:after {
+main:after {
   content: "";
   display: block;
 }
 
-.footer , .page:after {
+footer , .page:after {
   height: @footerHeight;
 }
 
-.footer {
+footer {
   background: @footerBackground;
 }
 
