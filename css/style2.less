@@ -1,0 +1,38 @@
+/* vars */
+@topbarHeight: 50px;
+@topbarBackground: orange;
+@footerHeight: 50px;
+@footerBackground: orange;
+@mainBackground: #369;
+
+
+
+/* vars */
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+  background : @mainBackground;
+}
+.header {
+  height: @topbarHeight;
+  background: @topbarBackground;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-top: -@footerHeight; 
+  margin-bottom: -@footerHeight; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  /* .push must be the same height as footer */
+  height: @footerHeight; 
+}
+.site-footer {
+  background: @footerBackground;
+}
