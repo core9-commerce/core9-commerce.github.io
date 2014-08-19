@@ -1,34 +1,32 @@
 * {
-	margin: 0;
-	padding: 0
+  margin: 0;
+  padding: 0;
 }
-
-html, body {
-	height: 100%;
-	background: #369
+html,
+body {
+  height: 100%;
+  background: #000000;
 }
-
 header {
-	height: 50px;
-	background: orange
+  height: 50px;
+  background: #333333;
 }
-
 main {
-	min-height: 100%;
-	margin-top: -50px;
-	margin-bottom: -50px;
-	display: block
-}
+  min-height: 100%;
+  margin-top: -50px;
+  margin-bottom: -50px;
+  display: block;
+  /* only ie */
 
+}
 main:after {
-	content: "";
-	display: block
+  content: "";
+  display: block;
 }
-
-footer, main:after {
-	height: 50px
+footer,
+main:after {
+  height: 50px;
 }
-
 footer {
-	background: orange
+  background: #333333;
 }
