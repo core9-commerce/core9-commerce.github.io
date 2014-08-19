@@ -34,7 +34,9 @@ var Core9 = {
 
 		  for(i=0; i<Core9.slideLabels.length; i++) {
 			  Core9.slideLabels[i].style.top = (Core9.body.clientHeight
-						- Core9.header.clientHeight - 20) + 'px';
+						- Core9.header.clientHeight - 30) + 'px';
+			  Core9.slideLabels[i].style.left = (Core9.body.clientWidth
+						- 80) + 'px';
 		  }
 
 	},
