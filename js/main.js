@@ -1,3 +1,36 @@
+var Spinner = function() {
+		
+		var loader = document.getElementById('loader')
+		  , border = document.getElementById('border')
+		  , a = 0
+		  , pi = Math.PI
+		  , t = 1
+		  , i = 0
+		  , x = 9;
+
+		(function draw() {
+		  a++;
+		  a %= 360;
+		  var r = ( a * pi / 180 )
+		    , x = Math.sin( r ) * 125
+		    , y = Math.cos( r ) * - 125
+		    , mid = ( a > 180 ) ? 1 : 0
+		    , anim = 'M 0 0 v -125 A 125 125 1 ' 
+		           + mid + ' 1 ' 
+		           +  x  + ' ' 
+		           +  y  + ' z';
+		  loader.setAttribute( 'd', anim );
+		  border.setAttribute( 'd', anim );
+		  if(i < 3239)setTimeout(draw, t);
+		  i++;
+		})();
+
+		
+}
+
+
+
+
 var Core9 = {
 
 	body : document.querySelector('body'),
@@ -10,6 +43,7 @@ var Core9 = {
 	slideLabels : document.querySelectorAll('.slide label'),
 
 	init : function() {
+		Spinner();
 		Core9.setEvents();
 		Core9.setStage();
 	},

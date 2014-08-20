@@ -6,55 +6,65 @@
 <link rel="stylesheet" type="text/css" href="css/layout.css" />
 <link rel="stylesheet" type="text/css" href="css/candy-slide.css" />
 <link rel="stylesheet" type="text/css" href="css/candy-fade.css" />
+<link rel="stylesheet" type="text/css" href="css/candy-spinner.css" />
 </head>
 <body>
-	<header>
-		<h1>Commerce</h1>
-	</header>
+	<header> </header>
 	<main>
-	 <div class="center">
+	<div class="center">
+		<div
+			style="position: relative; margin: 0 auto; width: 250px; height: 250px;"
+			id="counter">
+			<span
+				style="text-align: center; display: block; position: relative; top: 265px; _background: #ccc; color: #fff; font-size: 170px">1</span>
+			<svg width="250" height="250" viewbox="0 0 250 250">
+  <path id="border" transform="translate(125, 125)" />
+  <path id="loader" transform="translate(125, 125) scale(.84)" />
+</svg>
+		</div>
+		<div style="display: none;" class="slideshow">
 
-<div class="slideshow">
-    
-   <div class="slide">
-       <input type="radio" id="tab-1" name="tab-group-1" checked>
-       <label for="tab-1">1</label>
-       
-       <div class="content">
+			<div class="slide">
+				<input type="radio" id="tab-1" name="tab-group-1" checked> <label
+					for="tab-1">1</label>
 
-           <img style="width:100%; height:100%" src="http://upload.wikimedia.org/wikipedia/commons/2/2f/Mount_foraker.jpg" />
-       </div> 
-   </div>
-    
-   <div class="slide">
-       <input type="radio" id="tab-2" name="tab-group-1">
-       <label for="tab-2">2</label>
-       
-       <div class="content">
-           
-           
-           <img style="width:100%; height:100%" src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Berner_Alpen.jpg/1920px-Berner_Alpen.jpg" />
-       </div> 
-   </div>
-    
-    <div class="slide">
-       <input type="radio" id="tab-3" name="tab-group-1">
-       <label for="tab-3">3</label>
-     
-       <div class="content">
+				<div class="content">
 
-           
-           <img style="width:100%; height:100%" src="http://placekitten.com/g/200/200" />
-       </div> 
-   </div>
-    
-</div>
+					<img style="width: 100%; height: 100%"
+						src="http://upload.wikimedia.org/wikipedia/commons/2/2f/Mount_foraker.jpg" />
+				</div>
+			</div>
 
-  </div>
+			<div class="slide">
+				<input type="radio" id="tab-2" name="tab-group-1"> <label
+					for="tab-2">2</label>
+
+				<div class="content">
+
+
+					<img style="width: 100%; height: 100%"
+						src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Berner_Alpen.jpg/1920px-Berner_Alpen.jpg" />
+				</div>
+			</div>
+
+			<div class="slide">
+				<input type="radio" id="tab-3" name="tab-group-1"> <label
+					for="tab-3">3</label>
+
+				<div class="content">
+
+
+					<img style="width: 100%; height: 100%"
+						src="http://placekitten.com/g/200/200" />
+				</div>
+			</div>
+
+		</div>
+
+	</div>
 	</main>
-	<footer>
-	</footer>
-	
+	<footer> </footer>
+
 	<script src="js/enquire.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
