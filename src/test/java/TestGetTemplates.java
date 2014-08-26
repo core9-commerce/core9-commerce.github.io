@@ -9,9 +9,8 @@ public class TestGetTemplates {
 	@Test
 	public void test() {
 		
-		System.out.println(mode1);
-		
-		System.out.println(System.getProperty("user.dir"));
+		System.out.println(ROOT_DIR);
+
 	}
 
 }
